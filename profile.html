@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #ff7eb3, #ff758c);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .profile-container {
+            background: white;
+            padding: 40px;
+            width: 450px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff758c;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+
+        .profile-name {
+            font-size: 26px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .profile-bio {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+        .profile-info {
+            text-align: left;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .profile-info p {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f8f8f8;
+            border-radius: 8px;
+        }
+
+        .edit-btn {
+            display: inline-block;
+            padding: 12px 20px;
+            margin-top: 20px;
+            background: #ff758c;
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .edit-btn:hover {
+            background: #ff5277;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <img src="image/blank-profile-picture-973460_1280.webp" alt="User" class="profile-img">
+        <h2 class="profile-name">John Doe</h2>
+        <p class="profile-bio">Web Developer | Tech Enthusiast | Blogger</p>
+
+        <div class="profile-info">
+            <p><strong>Age:</strong> 25</p>
+            <p><strong>Address:</strong> 123 Street, City</p>
+            <p><strong>Skills:</strong> HTML, CSS, JavaScript</p>
+            <p><strong>Phone No:</strong> 123-456-7890</p>
+            <p><strong>Date of Birth:</strong> 01 Jan 1998</p>
+        </div>
+
+        <a href="#" class="edit-btn">Edit Profile</a>
+    </div>
+
+</body>
+</html>

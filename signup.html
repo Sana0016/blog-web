@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+
+        .form-container {
+            background: white;
+            padding: 20px;
+            width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .form-container h2 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .input-group {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #4facfe;
+            outline: none;
+            box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background: #4facfe;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #00c3ff;
+        }
+
+        .login-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: #4facfe;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form>
+            <div class="input-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="#">Login here</a></p>
+    </div>
+
+</body>
+</html>

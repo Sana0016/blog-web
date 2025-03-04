@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <!-- css-link -->
+     <link rel="stylesheet" href="style.css">
+     <!-- bootsrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawsome-link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    
+  <style>
+    /* * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    } */
+
+    /* body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f5f5f5;
+    } */
+
+    .card {
+        width: 320px;
+        background: #fff;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+    }
+
+    /* .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    } */
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 14px;
+        color: #666;
+        margin: 10px 0;
+    }
+
+    .card-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
+
+    .card-button:hover {
+        background: #0056b3;
+    }
+</style>
+
+    <!-- wrapper -->
+     <div class="container-xxl">
+<!-- navbar-start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 100vw; position: fixed; top: 0;
+right: 0;  z-index: 1000; ">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#" style="padding-left: 15px;">user-profile-name</a>
+      <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="display: flex; justify-content: flex-end; padding-left: 10px;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+<img src="image/blank-profile-picture-973460_1280.webp" alt="" style="height: 40px; width: 40px; border-radius: 50%; border: 1 px solid rgb(92, 185, 247);">              </li>
+<li class="nav-item dropdown" >
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+     profile
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="margin-left: -90px; margin-top: 10px; height: 200px;">
+      <li style="padding: 10px 5px;"><a class="dropdown-item" href="#">update-profile</a></li>
+      <li style="padding: 10px 5px;"><a class="dropdown-item" href="#">switch-account</a></li>
+      <li style="padding: 10px 5px;"><a class="dropdown-item" href="#">logout</a></li>
+    </ul>
+  </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!-- navbar-end -->
+<!-- mainbar-start -->
+<div class="container-xxl" style="display: flex; justify-content: space-between ; margin-top: 40px;">
+    <div class="sidebar">
+<ul>
+    <li><a href="#">your-profile</a></li>
+    <li><a href="#">all-your-post</a></li>
+    <li><a href="#">your-likes</a></li>
+    <li><a href="#">settings</a></li>
+    
+</ul>
+    </div>
+    <div class="centerbar">
+        <div class="postdiv">
+          <div class="card" style="border-radius: 20px;">
+            <div class="card-header" style="display: flex; justify-content: space-between; border-radius: 20px;">
+<div class="post-icon">              
+  <i class="fa-solid fa-earth-americas"></i> Post
+</div> 
+<div class="post-add">
+  <i class="fa-solid fa-plus"></i>
+</div>           
+</div>
+            
+            <div class="card-body">
+              <h5 class="card-title">SOmething about your post-</h5>
+              <div class="gallery-icon" style="place-self: center; border-radius: 50%; border: 2px solid black; height: 100px; width: 100px;display: flex;
+              justify-content: center;
+              align-items: center;">
+                <i class="fa-solid fa-image fa-3x"></i>
+              </div>
+             <div class="icons" style="display: flex; justify-content: space-between;">
+              <div href="#" class="icon"><i class="fa-regular fa-comment"></i>
+                <i class="fa-regular fa-heart"></i>
+                </div><div class="share-icon"><i class="fa-solid fa-share-nodes"></i></div>
+             </div>
+            </div>
+          </div>
+        </div>
+       
+    </div>
+</div>
+ <!-- mainbar-start -->
+
+     </div>
+     <!-- <div class="card">
+      <img src="https://source.unsplash.com/400x300/?nature" alt="Nature">
+      <div class="card-content">
+          <h2 class="card-title">Beautiful Nature</h2>
+          <p class="card-text">Explore the beauty of nature with stunning landscapes and breathtaking views.</p>
+          <a href="#" class="card-button">Explore More</a>
+      </div>
+  </div> -->
+     <!-- bootstrap-js -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>
