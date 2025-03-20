@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: linear-gradient(150deg, #616a79  #C1D8C3);
+        }
+        :root {
+    --primary-color: #878b98;
+    --secondary-color: #dfdeda;
+    --accent-color: #616a79;
+    --light-gray: #8f9fa6;
+    --dark-gray: #8f9fa6;
+  }
+
+        .form-container {
+            background:var(--secondary-color);
+            padding: 50px;
+            width: 550px;
+            height: 700px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        .form-container h2 {
+            margin-bottom: 15px;
+            color:var(--accent-color);
+        }
+
+        .input-group {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid var(--dark-gray);
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #C1D8C3;
+            outline: none;
+            box-shadow: 0 0 5px var(--accent-color);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: #878b98;
+        }
+
+        .login-link {
+            margin-top: 10px;
+            font-size: 25px;
+        }
+
+        .login-link a {
+            color:var(--primary-color);
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form id="submit">
+            <div class="input-group">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required id="email">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required id="password">
+            </div>
+            <button type="submit" class="submit-btn" id="signup">Register</button>
+        </form>
+        <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+
+    <script type="module" src="./index.js"></script>
+</body>
+</html>

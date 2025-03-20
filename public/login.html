@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+        }
+        :root {
+    --primary-color: #878b98;
+    --secondary-color: #dfdeda;
+    --accent-color: #616a79;
+    --light-gray: #8f9fa6;
+    --dark-gray: #8f9fa6;
+  }
+
+        .form-container {
+            background:var(--secondary-color);
+            padding: 50px;
+            width: 550px;
+            height: 700px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            justify-content: center;
+        }
+
+        .form-container h2 {
+            margin-bottom: 15px;
+            color: var(--accent-color);
+        }
+
+        .input-group {
+            width: 100%;
+            margin: 10px 0;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 20px;
+            border: 1px solid var(--dark-gray);
+            border-radius: 5px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: var(--accent-color);
+            outline: none;
+            box-shadow: 0 0 5px var(--dark-gray)
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 20px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .submit-btn:hover {
+            background: var(--dark-gray);
+        }
+
+        .google-btn {
+            width: 100%;
+            padding: 10px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin-top: 10px;
+        }
+
+      
+
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .signup-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <input type="email" placeholder="Email Address" required id="login-email">
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" required id="login-password">
+            </div>
+            <a href="#" class="forgot-password">Forgot Password?</a>
+            <button type="submit" class="submit-btn" id="login-btn">Login</button>
+        </form>
+        <button class="google-btn" id="google-login">Login with Google</button>
+        <p class="signup-link">Don't have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+ <script type="module" src="./index.js"></script>
+</body>
+</html>

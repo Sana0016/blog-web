@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-add</title>
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-xxl" style="display: flex; align-items: center; justify-content: center;">
+        <div class="container">
+            <h1>Add Blog</h1>
+            <form id="profileForm">
+              <label for="fullName">Blog Name:</label>
+              <input id="title" type="text" id="fullName" name="fullName" required />
+            
+
+              <label for="description">Description:</label>
+              <textarea id="description" name="description" required></textarea>
+            
+              <label for="profileImage">Profile Image:</label>
+              <input id="image" type="file" >
+              <br><br>
+          <button id="uploadBtn" style="width: 150px; height: 35px; border: none; outline: none; border-radius: 10px; background-color:#616a79; color: #ffff; font-size: 1rem;">Upload Image</button>
+      
+      <br>
+          <img id="imageUpload" src="" alt="Profile Image" width="200" style="display: none;">
+      
+             
+      
+          <br>
+            
+          <div class="dropdown">
+            <select name="" id="category" style="width: 300px;
+            height: 55px; color: #616a79; font-size: 1.2rem; font-weight: bolder;" >
+                <option>Select Cotegory</option>
+    
+                <option value="Food">Food</option>
+                <option value="Travel">Travel</option>
+    
+                <option value="Photography">Photography</option>
+    
+                <option value="Cloths">Cloths</option>
+    
+            </select>
+           </div>  <br>
+      
+              <button type="submit">Submit</button>
+            </form>
+          
+                </div>
+
+              
+    </div>
+  <script type="module" src="./blog.js"></script>
+</body>
+</html>

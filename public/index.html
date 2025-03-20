@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <!-- css-link -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="blog.css">
+     <!-- bootsrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- fontawsome-link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- theme-icon-link -->
+ <link rel="stylesheet" href="themify-icons.css">
+</head>
+<body>
+    
+ 
+
+   
+
+    <!-- wrapper -->
+     <div class="container-xxl" style="max-width: 100%; padding: 0%; margin: 0; background-color: #fff;">
+<!-- navbar-start -->
+ <nav class="navbar navbar-expand-lg " style="width: 100vw; position: fixed; top: 0;
+right: 0;  z-index: 1000;  background-color: #dfdeda;">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="#" style="padding-left: 10px; "><h2 style="font-size: 28px;
+        font-weight: bold;
+        color: #616a79;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border-bottom: 3px solid  #878b98;
+        display: inline-block;
+        padding-bottom: 5px;">MY BLOGS</h2></a>
+      
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" style="display: flex; justify-content: flex-end; padding-left: 10px;">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+<img src="image/images (1).jpeg" alt="" style="height: 40px; width: 40px; border-radius: 50%; border: 1 px solid rgb(92, 185, 247);">              </li>
+
+  <li class="nav-item dropdown" style="position: relative;">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" style=" color:  #878b98">
+     profile
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" 
+        style="background: #fff; border: 1px solid #444; border-radius: 8px; margin-left: -90px; 
+               margin-top: 10px; width: 180px; box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);">
+        
+        <li style="padding: 10px 5px;">
+            <a class="dropdown-item" href="profile.html" 
+               style="color:#878b98 ; padding: 10px; display: block; border-radius: 5px;">
+               Update Profile
+            </a>
+        </li>
+        
+        <li style="padding: 10px 5px;">
+            <a class="dropdown-item" href="#" 
+               style="color:#878b98; padding: 10px; display: block; border-radius: 5px;">
+               Switch Account
+            </a>
+        </li>
+        
+        <li style="padding: 10px 5px;">
+            <a class="dropdown-item" href="#" id="logout-btn"
+               style="color:#878b98; padding: 10px; display: block; border-radius: 5px; ">
+               Logout
+            </a>
+        </li>
+    </ul>
+</li>
+ 
+        </ul>
+      </div>
+    </div>
+  </nav> 
+<!-- navbar-end -->
+<!-- mainbar-start -->
+<div class="container-xxl" style="display: flex; max-width: 100%; margin-top: 40px;">
+  <!-- Toggle Button -->
+<button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <!-- Close Button -->
+    <button class="close-btn" onclick="toggleSidebar()">✖</button>
+    
+    <ul>
+        <li><a href="profile.html">Your Profile</a></li>
+        <h4 class="sidebar-title">My Blogs Categories</h4>
+        <li><a href="blog.html">Travel</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="clothes.html">Clothes</a></li>
+        <li><a href="photography.html">Photography</a></li>
+    </ul>
+</div>
+
+    <div class="centerbar">
+        <div class="postdiv" style="width: 700px; justify-self: center;">
+          <div class="card" style="border-radius: 20px; background-color: #dfdeda; color: #fff;">
+            <div class="card-header" style="display: flex; justify-content: space-between; border-radius: 20px; background-color: #616a79;">
+<div class="post-icon">              
+  <i class="fa-solid fa-earth-americas"></i> Post
+</div> 
+<div class="post-add">
+  <i id="add-post" class="fa-solid fa-plus"></i>
+</div>           
+</div>
+            
+            <div class="card-body">
+              <h5 class="card-title" style="color: #616a79;">SOmething about your post-</h5>
+              <div class="gallery-icon" style="place-self: center; border-radius: 50%; border: 2px solid black; height: 100px; width: 100px;display: flex;
+              justify-content: center;
+              align-items: center;">
+                <i style="color: #616a79;" class="fa-solid fa-image fa-3x"></i>
+              </div>
+             <div class="icons" style="display: flex; justify-content: space-between;">
+              <div href="#" class="icon"><i style="color: #616a79;" class="fa-regular fa-comment"></i>
+                <i style="color: #616a79;" class="fa-regular fa-heart"></i>
+                </div><div class="share-icon"><i style="color: #616a79;" class="fa-solid fa-share-nodes"></i></div>
+             </div>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <!-- travel-div -->
+        <div class="container-xxl" style="max-width: 100%; height: fit-content; margin-top: 20px; ">
+
+          <div class="double-photo-div">
+
+  <div class="div-text">
+    <h1 style="margin-left: 30px; place-self: center;">MY <span>TRAVEL JOURNEY</span></h1>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim similique modi corporis dolor officia 
+  
+    </p>
+  
+  </div>
+  <div class="photo-div" >
+    <div class="parent-photo" >
+      <img style="width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);" src="image/images (9).jpeg" alt="">
+    </div>
+    <div class="chil1-photo">
+      <img style="width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);" src="image/images (3).jpg" alt="">
+    </div>
+    <div class="child2-photo">
+      <img style="width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);" src="image/1-cappadocia-turkey-travel-guide-hot-air-balloons.jpg" alt="">
+    </div>
+    <div class="child3-photo">
+      <img style="width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);" src="image/images (2).jpeg" alt="">
+    </div>
+  </div>
+           </div>
+        </div>
+         <br><br>
+       <!-- food-div -->
+       <div class="container-xxl" style=" max-width: 100%; margin-top: 20px;  ">
+        <h1 style="margin-left: 30px; place-self: center;">MY FOVRT CRAVING</h1>
+<br><br>
+        <div class="food-div">
+
+          <div class="food-img-div" style="width: fit-content;">
+            <img style="width: fit-content; height: 500px;" src="image/istockphoto-1829241109-612x612.jpg" alt="">
+          </div>
+          <div class="food-text">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, officia. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos, quaerat.lorem Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis aliquid tenetur dolore cupiditate? Doloremque possimus optio quas. Ipsa nihil quibusdam iure, modi deserunt tenetur in placeat impedit sint, fugit debitis!</p>
+          </div>
+        </div>
+      </div>
+      
+        <br>
+        <!-- cloths-div -->
+         <div class="container-xxl" style="max-width: 100vw; margin-top: 80px;">
+          <h1 style="margin-left: 30px; place-self: center;">MY FOVRT CLOTHES</h1>
+          <br>
+
+<div class="cloth-div">
+  <div class="card" style="background-color:  #dfdeda; ">
+      <img class="img-card" src="image/p16711-embroidered-chiffon-party-dress_e81d585a-9989-4fad-ab5c-c162d3ea83a4_580x.webp" alt="Nature">
+      <div class="card-content">
+          <h2 class="card-title"style="color: #fff;" >Beautiful Nature</h2>
+          <p class="card-text" >Explore the beauty of nature with stunning landscapes and breathtaking views.</p>
+          <button href="#" class="card-button"  style=" color: var(--secondary-color);
+          background-color: var(--accent-color)";>Explore More</button>
+      </div>
+  </div>
+  <div class="card" style="background-color: #dfdeda; ">
+      <img class="img-card" src="image/p16711-embroidered-chiffon-party-dress_e81d585a-9989-4fad-ab5c-c162d3ea83a4_580x.webp" alt="Nature">
+      <div class="card-content">
+          <h2 class="card-title" style="color: #fff;">Beautiful Nature</h2>
+          <p class="card-text">Explore the beauty of nature with stunning landscapes and breathtaking views.</p>
+          <button href="#" class="card-button"  style=" color: var(--secondary-color);
+          background-color: var(--accent-color)";>Explore More</button>      </div>
+  </div>
+  <div class="card" style="background-color: #dfdeda; ">
+      <img class="img-card" src="image/p14769-embroidered-bridal-maxi-dress_580x.webp" alt="Nature">
+      <div class="card-content">
+          <h2 class="card-title" style="color: #fff;">Beautiful Nature</h2>
+          <p class="card-text">Explore the beauty of nature with stunning landscapes and breathtaking views.</p>
+          <button href="#" class="card-button"  style=" color: var(--secondary-color);
+          background-color: var(--accent-color)";>Explore More</button>      </div>
+  </div>
+  <div class="card" style="background-color: #dfdeda; ">
+      <img class="img-card" src="image/p16711-embroidered-chiffon-party-dress_e81d585a-9989-4fad-ab5c-c162d3ea83a4_580x.webp" alt="Nature">
+      <div class="card-content">
+          <h2 class="card-title" style="color: #fff;">Beautiful Nature</h2>
+          <p class="card-text">Explore the beauty of nature with stunning landscapes and breathtaking views.</p>
+          <button href="#" class="card-button"  style=" color: var(--secondary-color);
+          background-color: var(--accent-color)";>Explore More</button>      </div>
+  </div>
+</div>
+         </div>
+         <!-- PHOTOGRAPHY -->
+          <div class="container-xxl" style="max-width: 100%; margin-top: 180px;">
+            <h1 style="margin-left: 30px; place-self: center;">MY PHOTOGRAPHY</h1>
+            <br><br>
+
+            <div class="gallery">
+              <img src="image/1-cappadocia-turkey-travel-guide-hot-air-balloons.jpg" alt="Image 1">
+              <img src="image/images (1).jpeg" alt="">
+              <img src="image/images (10).jpeg" alt="">
+              <img src="image/images (11).jpeg" alt="">
+              <img src="image/images (2).jpeg" alt="">
+              <img src="image/images (3).jpg" alt="">
+              <img src="image/images (4).jpeg" alt="">
+              <img src="image/images (5).jpeg" alt="">
+              <img src="image/images (6).jpeg" alt="">
+              <img src="image/images (7).jpeg" alt="">
+              <img src="image/images (9).jpeg" alt="">
+              <img src="image/images (2).jpeg" alt="">
+              <img src="image/images (5).jpeg" alt="">
+              <img src="image/images (1).jpeg">
+              <img src="image/p16711-embroidered-chiffon-party-dress_e81d585a-9989-4fad-ab5c-c162d3ea83a4_580x.webp" style="max-height: ;" alt="">
+              <img src="image/p14769-embroidered-bridal-maxi-dress_580x.webp" alt="">
+            </div>
+          </div>
+    </div>
+    <!-- footer -->
+     
+</div>
+ <!-- mainbar-end -->
+ <footer>
+  <div class="container">
+      <div class="row py-2">
+          <div class="col-sm-6 col-md-6 col-lg-3 py-5">
+              <h4>Section </h4>
+              <li><a class="footer-link" href="index.html">Home</a></li>
+              <li><a class="footer-link" href="blog.html">Travel</a></li>
+              <li><a class="footer-link" href="food.html">Food</a></li>
+              <li><a class="footer-link" href="clothes.html">Clothes</a></li>
+              <li><a class="footer-link" href="#contact-us">Contact US</a></li>
+          </div>
+          <!-- <div class="col-sm-6 col-md-6 col-lg-3 py-5">
+              <h4>Categories</h4>
+              <li><a class="footer-link" href="./appetizer.html">Appetizer</a></li>
+              <li><a class="footer-link" href="./breakfast.html">Breakfast</a></li>
+              <li><a class="footer-link" href="./lunch.html">Lunch</a></li>
+              <li><a class="footer-link" href="./dinner.html">Dinner</a></li>
+              <li><a class="footer-link" href="./dessert.html">Desert</a></li>
+              <li><a class="footer-link" href="./Salad.html">Salad</a></li>
+              <li><a class="footer-link" href="./smoothie.html">Smoothies</a></li>
+          </div> -->
+          <div class="col-md-12 col-lg-6 py-5">
+              <h4>Subscribe to our newsletter</h4>
+              <p class="para3">Monthly digest of whats new and exciting from us.</p>
+              <div class="input-group mb-3 mt-4">
+                  <input type="search" class="form-control rounded-pill" placeholder="search here...">
+                  <span class="main-btn rounded-pill search-btn">search now</span>
+              </div>
+          </div>
+
+          <hr>
+
+          <!-- privacy policy -->
+          <div class="row pt-3 privacy">
+              <div class="col-lg-6 right">
+                  © 2021 Company, Inc. All rights reserved.
+              </div>
+              <div class="col-lg-6 fs-3 left">
+                  <a href="#" class="footer-link"><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="footer-link"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+     </div>
+     <!-- js-link -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+     crossorigin="anonymous"></script>
+      <!-- bootstrap-js -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+     <script>
+     function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("show");
+}
+      </script>
+  <script type="module" src="./blog.js"></script>  
+     <!-- <script src="index.js"></script> -->
+ <script type="module" src="./index.js"></script>
+</body>
+</html>

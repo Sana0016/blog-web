@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- css-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Themify icon -->
+<link rel="stylesheet" href="themify-icons.css" />
+<link rel="stylesheet" href="categories.css">
+<link rel="stylesheet" href="blog.css"> 
+<link rel="stylesheet" href="style.css">    <!-- bootstap-link -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+        :root {
+  --primary-color: #878b98;
+  --secondary-color: #dfdeda;
+  --accent-color: #616a79;
+  --light-gray: #8f9fa6;
+  --dark-gray: #8f9fa6;
+}
+
+       
+        h2 {
+            color:var(--primary-color);
+            font-size: 24px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin:  0 auto;
+
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color:var(--accent-color);
+        }
+        input, textarea {
+            width: 600px;
+            padding: 12px;
+            border: 2px solid #6A9C89;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: all 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        input:focus, textarea:focus {
+            border-color: #6A9C89;
+            outline: none;
+            box-shadow: 0 4px 10px #6A9C89;
+        }
+        button {
+            width: 10%;
+            padding: 12px;
+            background: var(--dark-gray);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #616a79 ,#8f9fa6);
+            transform: scale(1.05);
+        }
+       
+    </style>
+</head>
+<body>
+    <section id="header">
+        <nav class="navbar navbar-expand-lg fixed-top bg-white mb-3">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="padding-left: 10px; "><h2 style="font-size: 28px;
+                    font-weight: bold;
+                    color: #616a79;
+                    text-align: center;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    border-bottom: 3px solid  #878b98;
+                    display: inline-block;
+                    padding-bottom: 5px;">MY BLOGS</h2></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="ti-align-justify"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./blog.html">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./food.html">Food</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./clothes.html">Clothes </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./photography.html">Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./signUp.html"><i class="ti-user h4"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+     <div>
+        <div style="margin-top: 5%;">
+            <h2 style="place-self: center;">We'd Love to Hear From You!</h2>
+            <p>Have any questions or inquiries? Fill out the form below, and we'll get back to you ASAP!</p>
+        </div>
+        
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" rows="5" placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-sm-6 col-md-6 col-lg-3 py-5">
+                    <h4>Section </h4>
+                    <li><a class="footer-link" href="#">Home</a></li>
+                    <li><a class="footer-link" href="#our-shop">About Us</a></li>
+                    <li><a class="footer-link" href="./catogories.html">Categories</a></li>
+                    <li><a class="footer-link" href="./cookingTips.html">Cooking Tips</a></li>
+                    <li><a class="footer-link" href="#contact-us">Contact US</a></li>
+                </div>
+                
+                <div class="col-md-12 col-lg-6 py-5">
+                    <h4>Subscribe to our newsletter</h4>
+                    <p class="para3">Monthly digest of whats new and exciting from us.</p>
+                    <div class="input-group mb-3 mt-4">
+                        <input type="search" class="form-control rounded-pill" placeholder="search here...">
+                        <span class="main-btn rounded-pill search-btn">search now</span>
+                    </div>
+                </div>
+
+                <hr>
+
+                <!-- privacy policy -->
+                <div class="row pt-3 privacy">
+                    <div class="col-lg-6 right">
+                        © 2021 Company, Inc. All rights reserved.
+                    </div>
+                    <div class="col-lg-6 fs-3 left">
+                        <a href="#" class="footer-link"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="footer-link"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="footer-link"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#" class="footer-link"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+</html>
